@@ -1,0 +1,911 @@
+/* Base Styles - Desktop First */
+.wholemain{
+    background-color: black;
+}
+
+.topdiv{
+    background-color: black;
+    margin: 0 !important;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topdiv h1{
+    font-family: 'Stardos Stencil', sans-serif; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 69.27px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.imagediv{
+    margin: 0 !important;
+    width: 100%;
+    background-color: black;
+}
+
+.imagediv img{
+    width: 100%;
+}
+
+.box-and-line{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.midline{
+    height: 73px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(179, 140, 50, 1), rgba(239, 223, 124, 1), rgba(197, 161, 75, 1));
+}
+
+.name-box {
+    background-color: black;
+    width: clamp(60%, 40vw, 90%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -220px;
+    padding-top: 60px;
+}
+
+.smallbox {
+    width: 80%;
+    height: auto;
+    border-radius: 40px;
+    border: 3px solid rgba(239, 223, 124, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.smallbox h2 {
+    color: white;
+    font-family: "Cinzel", serif;
+    font-weight: 100;
+    font-size: clamp(24px, 6vw, 58px); 
+    text-align: center;
+}
+
+.smallbox p {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    background: linear-gradient(to right, rgba(179, 140, 50, 1), rgba(239, 223, 124, 1), rgba(197, 161, 75, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 400;
+    font-size: clamp(80px, 20vw, 247px); 
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: -30px;
+}
+
+.characters {
+    background: linear-gradient(to right, rgba(179, 140, 50, 1), rgba(239, 223, 124, 1), rgba(197, 161, 75, 1));
+    padding: 1.5vw 3vw;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -5vh;
+    border: 0.5vw solid black;
+    gap: 0vw;
+    box-sizing: border-box;
+}
+
+.characters span {
+    font-size: clamp(16px, 4vw, 30px);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    padding: 0 1vw;
+    color: #111111;
+}
+
+.characters span.magic{
+    border: none;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.content{
+    background-color: black;
+    color: white;
+    padding-top: 400px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: -1;
+}
+
+.content span{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.content p{
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 45px;
+    width: 100%;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.enterDiv{
+    width: 362px;
+    height: 114px;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 30px;
+    font-size: 55px;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(to right, rgba(179, 140, 50, 1), rgba(239, 223, 124, 1), rgba(197, 161, 75, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter{
+    text-decoration: none;
+}
+
+.exitDiv{
+    width: 362px;
+    height: 114px;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 30px;
+    font-size: 55px;
+    text-decoration: none;
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(239, 223, 124, 1);
+}
+
+.exit{
+    text-decoration: none;
+}
+
+footer{
+    margin: 80px 0;
+    padding: 30px 0;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+}
+
+/* RESPONSIVE DESIGN STARTS HERE */
+
+/* Large Desktop - 1440px and above */
+@media (min-width: 1440px) {
+    .topdiv h1 {
+        font-size: 80px;
+        padding: 15px 0;
+    }
+    
+    .content {
+        padding-left: 150px;
+        padding-right: 150px;
+        gap: 45px;
+    }
+    
+    .content span {
+        font-size: 40px;
+    }
+    
+    .content p {
+        font-size: 28px;
+        line-height: 50px;
+    }
+}
+
+/* Medium Desktop - 1200px to 1439px */
+@media (max-width: 1439px) and (min-width: 1200px) {
+    .topdiv h1 {
+        font-size: 65px;
+    }
+
+        .name-box {
+        top: -150px;
+        width: clamp(70%, 50vw, 90%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        /* background-color: red; */
+    }
+    
+    .smallbox {
+        padding: 20px;
+        border-radius: 30px;
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(20px, 5vw, 45px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(60px, 15vw, 180px);
+        margin-top: -20px;
+        margin-bottom: -18px;
+    }
+    
+    .content {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .content span {
+        font-size: 32px;
+    }
+    
+    .content p {
+        font-size: 23px;
+        line-height: 42px;
+    }
+}
+
+/* Small Desktop / Large Laptop - 1024px to 1199px */
+@media (max-width: 1199px) and (min-width: 1024px) {
+    .topdiv h1 {
+        font-size: 58px;
+        letter-spacing: 2px;
+    }
+    
+    .name-box {
+        top: -180px;
+        width: clamp(65%, 45vw, 85%);
+        /* background-color: red; */
+    }
+    
+    .smallbox {
+        padding: 25px;
+    }
+
+        .characters {
+        padding: 2vw 4vw;
+        bottom: -9vh;
+        border-radius: 1.5em;
+        border: 0.3vw solid black;
+    }
+    
+    .characters span {
+        font-size: clamp(14px, 2.7vw, 25px);
+        padding: 0 0.8vw;
+    }
+    
+    .content {
+        padding-top: 350px;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 30px;
+    }
+    
+    .content span {
+        font-size: 30px;
+    }
+    
+    .content p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    
+    .actions {
+        gap: 30px;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 320px;
+        height: 100px;
+        font-size: 48px;
+    }
+}
+
+/* Large Tablet - 768px to 1023px */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .topdiv h1 {
+        font-size: 48px;
+        letter-spacing: 1px;
+        padding: 15px 0;
+    }
+    
+    .midline {
+        height: 60px;
+    }
+    
+    .name-box {
+        top: -100px;
+        width: clamp(70%, 50vw, 90%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        /* background-color: red; */
+    }
+    
+    .smallbox {
+        padding: 20px;
+        border-radius: 30px;
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(20px, 5vw, 45px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(60px, 15vw, 180px);
+        margin-top: -20px;
+        margin-bottom: -18px;
+    }
+    
+    .characters {
+        padding: 2vw 4vw;
+        bottom: -4vh;
+        border-radius: 1.5em;
+        border: 0.3vw solid black;
+    }
+    
+    .characters span {
+        font-size: clamp(14px, 2.7vw, 25px);
+        padding: 0 0.8vw;
+    }
+    
+    .content {
+        padding-top: 260px;
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 25px;
+    }
+    
+    .content span {
+        font-size: 28px;
+    }
+    
+    .content p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    
+    .actions {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 280px;
+        height: 90px;
+        font-size: 42px;
+        border-radius: 25px;
+    }
+    
+    footer {
+        margin: 60px 0;
+        font-size: 20px;
+    }
+}
+
+/* Medium Tablet - 600px to 767px */
+@media (max-width: 767px) and (min-width: 600px) {
+    .topdiv h1 {
+        font-size: 42px;
+        letter-spacing: 1px;
+        padding: 12px 0;
+    }
+    
+    .midline {
+        height: 50px;
+    }
+    
+    .name-box {
+        top: -120px;
+        width: clamp(75%, 55vw, 95%);
+        padding-top: 40px;
+    }
+    
+    .smallbox {
+        padding: 18px;
+        border-radius: 25px;
+        border: 2px solid rgba(239, 223, 124, 1);
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(18px, 4.5vw, 38px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(50px, 16vw, 150px);
+        margin-top: -15px;
+        margin-bottom: -20px;
+    }
+    
+    .characters {
+        padding: 2.5vw 5vw;
+        bottom: -3vh;
+        border-radius: 1.2em;
+        border: 0.25vw solid black;
+    }
+    
+    .characters span {
+        font-size: clamp(12px, 3vw, 22px);
+        padding: 0 0.6vw;
+    }
+    
+    .characters span.magic {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+          padding: 0 3px;
+
+      
+    }
+    
+    .content {
+        padding-top: 220px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 20px;
+    }
+    
+    .content span {
+        font-size: 24px;
+    }
+    
+    .content p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .actions {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 250px;
+        height: 80px;
+        font-size: 36px;
+        border-radius: 20px;
+    }
+    
+    footer {
+        margin: 50px 0;
+        font-size: 18px;
+    }
+}
+
+/* Large Mobile - 480px to 599px */
+@media (max-width: 599px) and (min-width: 480px) {
+    .topdiv h1 {
+        font-size: 36px;
+        letter-spacing: 0.5px;
+        padding: 10px 0;
+    }
+    
+    .midline {
+        height: 40px;
+    }
+    
+    .name-box {
+        top: -70px;
+        width: clamp(80%, 60vw, 95%);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        /* background-color: red; */
+    }
+    
+    .smallbox {
+        padding: 15px;
+        border-radius: 20px;
+        border: 2px solid rgba(239, 223, 124, 1);
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(16px, 4vw, 30px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(40px, 14vw, 120px);
+        margin-top: -12px;
+        margin-bottom: -10px;
+    }
+    
+    .characters {
+        padding: 3vw 6vw;
+        bottom: -4.5vh;
+        border-radius: 1em;
+        border: 0.2vw solid black;
+        flex-wrap: wrap;
+        gap: 0.5vw;
+    }
+    
+    .characters span {
+        font-size: clamp(10px, 2.5vw, 18px);
+        padding: 0 0.4vw;
+    }
+    
+    .characters span.magic {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+          padding: 0 3px;
+
+    }
+    
+    .content {
+        padding-top: 180px;
+        padding-left: 25px;
+        padding-right: 25px;
+        gap: 18px;
+    }
+    
+    .content span {
+        font-size: 22px;
+    }
+    
+    .content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .actions {
+        gap: 15px;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 18px;
+    }
+    
+    footer {
+        margin: 40px 0;
+        font-size: 16px;
+    }
+}
+
+/* Medium Mobile - 375px to 479px */
+@media (max-width: 479px) and (min-width: 375px) {
+    .topdiv h1 {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        padding: 8px 0;
+    }
+    
+    .midline {
+        height: 35px;
+    }
+    
+    .name-box {
+        top: -55px;
+        width: clamp(85%, 65vw, 98%);
+        padding-top: 25px;
+        padding-bottom: 30px;
+        /* background-color: red; */
+    }
+    
+    .smallbox {
+        padding: 20px;
+        border-radius: 18px;
+        border: 2px solid rgba(239, 223, 124, 1);
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(14px, 3.5vw, 25px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(35px, 12vw, 100px);
+        margin-top: -10px;
+        margin-bottom: -2px;
+    }
+    
+    .characters {
+        padding: 3.5vw 7vw;
+        bottom: -2.5vh;
+        border-radius: 0.8em;
+        border: 0.15vw solid black;
+        flex-wrap: wrap;
+        gap: 1vw;
+    }
+    
+    .characters span {
+        font-size: clamp(9px, 2vw, 16px);
+        padding: 0 0.3vw;
+    }
+    
+    .characters span.magic {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+          padding: 0 3px;
+
+    }
+    
+    .content {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 15px;
+    }
+    
+    .content span {
+        font-size: 20px;
+    }
+    
+    .content p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .actions {
+        gap: 12px;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+    
+    footer {
+        margin: 35px 0;
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile - 320px to 374px */
+@media (max-width: 374px) {
+    .topdiv h1 {
+        font-size: 24px;
+        letter-spacing: 0px;
+        padding: 6px 0;
+    }
+    
+    .midline {
+        height: 30px;
+    }
+
+ .name-box {
+        top: -40px;
+        width: clamp(85%, 65vw, 98%);
+        padding-top: 25px;
+        padding-bottom: 30px;
+        /* background-color: red; */
+    }
+    
+    .smallbox {
+        padding: 20px;
+        border-radius: 18px;
+        border: 2px solid rgba(239, 223, 124, 1);
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(14px, 3.5vw, 25px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(35px, 12vw, 100px);
+        margin-top: -10px;
+        margin-bottom: -2px;
+    }
+
+
+    
+    .characters {
+        padding: 4vw 8vw;
+        bottom: -2.5vh;
+        border-radius: 0.6em;
+        border: 0.1vw solid black;
+        flex-wrap: wrap;
+        gap: 1.5vw;
+    }
+    
+    .characters span {
+        font-size: clamp(8px, 1.8vw, 14px);
+        padding: 0 0.2vw;
+    }
+    
+    .characters span.magic {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+          text-align: center;
+          padding: 0 3px;
+        /* background-color: blue; */
+    }
+    
+    .content {
+        padding-top: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 12px;
+    }
+    
+    .content span {
+        font-size: 18px;
+    }
+    
+    .content p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    
+    .actions {
+        gap: 12px;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+    
+    footer {
+        margin: 30px 0;
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile - below 320px */
+@media (max-width: 319px) {
+    .topdiv h1 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        padding: 5px 0;
+    }
+    
+    .midline {
+        height: 25px;
+    }
+    
+    .name-box {
+        top: -60px;
+        width: 95%;
+        padding-top: 15px;
+    }
+    
+    .smallbox {
+        padding: 8px;
+        border-radius: 12px;
+        border: 1px solid rgba(239, 223, 124, 1);
+    }
+    
+    .smallbox h2 {
+        font-size: clamp(10px, 2.5vw, 16px);
+    }
+    
+    .smallbox p {
+        font-size: clamp(25px, 8vw, 60px);
+        margin-top: -5px;
+        margin-bottom: -8px;
+    }
+    
+    .characters {
+        padding: 4.5vw 9vw;
+        bottom: -1vh;
+        border-radius: 0.5em;
+        border: 0.08vw solid black;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    
+    .characters span {
+        font-size: clamp(7px, 1.5vw, 12px);
+        padding: 0 0.1vw;
+    }
+    
+    .characters span.magic {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+          padding: 0 3px;
+
+    }
+    
+    .content {
+        padding-top: 100px;
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 10px;
+    }
+    
+    .content span {
+        font-size: 16px;
+    }
+    
+    .content p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    
+    .actions {
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 160px;
+        height: 55px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    
+    footer {
+        margin: 25px 0;
+        font-size: 10px;
+    }
+}
+
+/* Landscape orientation adjustments for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+    .topdiv h1 {
+        font-size: 28px;
+        padding: 5px 0;
+    }
+    
+    .name-box {
+        top: -60px;
+        padding-top: 20px;
+    }
+    
+    .smallbox {
+        padding: 10px;
+    }
+    
+    .content {
+        padding-top: 120px;
+        gap: 15px;
+    }
+    
+    .content span {
+        font-size: 18px;
+    }
+    
+    .content p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    
+    .actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .enterDiv, .exitDiv {
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    footer {
+        margin: 30px 0;
+        font-size: 12px;
+    }
+}

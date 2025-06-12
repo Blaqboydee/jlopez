@@ -1,6 +1,6 @@
 import React from "react";
-import "./KnowMe.css";
-import GenFooter from "./GenFooter";
+import "../assets/Styles/KnowMe.css";
+import GenFooter from "../Components/GenFooter";
 import profileimage from "../assets/Javiera mages/Javiera Prospect Profiles/WhatsApp Image 2025-05-29 at 02.21.08.jpeg"
 
 const KnowMe = () => {

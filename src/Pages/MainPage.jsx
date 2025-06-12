@@ -1,7 +1,7 @@
 import React from "react";
-import displayImage from "../assets/Untitled design (37).png";
+import displayImage from "../assets/Javiera mages/Javiera Prospect Profiles/Untitled design (37).png";
 import { Link } from "react-router-dom";
-import "./MainPage.css";
+import "../assets/Styles/MainPage.css";
 
 const MainPage = () => {
   return (

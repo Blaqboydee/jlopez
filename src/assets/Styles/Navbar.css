@@ -34,9 +34,8 @@
 
 .nav-link-focus{
      color: white !important;
-     /* text-decoration: underline; */
-     transform: scale(1.2);
      font-weight: 600;
+     text-decoration: underline;
 }
 
 .book-button {
@@ -44,13 +43,13 @@
   border: 4px solid  rgba(239, 223, 124, 1);
   border-radius: 30px;
   padding: 5px 15px;
-  margin-left: 15px;
   color: white;
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
   transition: 0.3s;
   font-family: 'Work Sans', sans-serif;
+
 
 }
 
@@ -127,8 +126,6 @@
 
 .nav-link-focus{
      color: white !important;
-     /* text-decoration: underline; */
-     transform: translateX(10px);
      font-weight: 600;
 }
 
@@ -138,8 +135,6 @@
 @media (max-width: 920px){
 .nav-link-focus{
      color: white !important;
-     /* text-decoration: underline; */
-     transform: translateX(10px);
      font-weight: 600;
 }
 }

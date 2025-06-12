@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import NavBar from './Navbar'
+import NavBar from '../Components/Navbar'
+import ScrollToTop from '../Components/ScrollToTop'
 
 const Dashboard = () => {
   return (
@@ -9,6 +10,7 @@ const Dashboard = () => {
          <NavBar/>
         
         <div className=''>
+          <ScrollToTop/>
             <Outlet/>
         </div>
         </div>

@@ -1,26 +1,20 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import MainPage from './MainPage'
+import MainPage from './Pages/MainPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import KnowMe from './KnowMe';
-import NavBar from './Navbar';
-import Dashboard from './Dashboard';
-import Seeme from './Seeme';
-import Timetogether from './Timetogether';
-import Surpriseme from './Surpriseme';
-import GenFooter from './GenFooter';
-import BookingForm from './BookingForm';
+import KnowMe from './Pages/KnowMe';
+import NavBar from './Components/Navbar';
+import Dashboard from './Pages/Dashboard';
+import Seeme from './Pages/Seeme';
+import Timetogether from './Pages/Timetogether';
+import Surpriseme from './Pages/Surpriseme';
+import GenFooter from './Components/GenFooter';
+import BookingForm from './Pages/BookingForm';
+import useRouteVisibility from "./hooks/useRouteVisibilty";
 
-const App = () => {
-     const location = useLocation();
- 
-   
+function App() {
+  const { shouldDisplayNavBar, shouldHaveGenFooter } = useRouteVisibility();
   
-  const knownRoutes = ["/knowme"]
-  const shouldDisplayNavBar = knownRoutes.includes(location.pathname)
-
-  const haveGenFooter = ['/dashboard', '/dashboard/knowme', '/dashboard/seeme', '/dashboard/timetogether', '/dashboard/surpriseme', '/dashboard/booking'  ]
-  const shouldHaveGenFooter = haveGenFooter.includes(location.pathname)
   return (
     <>
      {shouldDisplayNavBar && <NavBar/>}

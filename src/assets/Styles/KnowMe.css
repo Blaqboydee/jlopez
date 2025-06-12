@@ -1,0 +1,620 @@
+/* Base styles (existing) */
+.thecontainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  background: #1a1a1ad3;
+  background-image: url("../Javiera mages/Javiera Prospect Profiles/WhatsApp Image 2025-03-20 at 01.49.27.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  padding: 30px 150px;
+  align-items: flex-start;
+}
+
+.picDiv {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo {
+  position: relative;
+  border-right: 2px solid #333;
+  height: 80vh;
+  border: 5px solid rgb(250, 187, 40);
+  border-radius: 36px;
+  width: 70%;
+}
+
+.profile-photo img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.sidecontent {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: linear-gradient(to right, #B38C32, #EFDF7C, #C5A14B);
+  color: #333;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ccc;
+  width: 75%;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #fff;
+}
+
+.info-section {
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  background-color: black;
+}
+
+.based-in {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}
+
+.locations {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info-box {
+  background-color: #1b1b1b;
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin: 60px auto;
+  max-width: 60%;
+  box-shadow: 0 5px 0 gold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  font-size: 0.95rem;
+}
+
+.info-item strong {
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.info-item span {
+  color: #ccc;
+}
+
+/* ===============================================
+   RESPONSIVE MEDIA QUERIES
+   =============================================== */
+
+/* Large Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .thecontainer {
+    padding: 25px 80px;
+  }
+  
+  .profile-photo {
+    height: 70vh;
+    width: 75%;
+  }
+  
+  .sidecontent {
+    padding: 25px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+  }
+  
+  p {
+    width: 85%;
+    font-size: 0.95rem;
+  }
+  
+  .based-in {
+    font-size: 22px;
+  }
+  
+  .info-box {
+    max-width: 70%;
+    padding: 25px 15px;
+    margin: 50px auto;
+  }
+}
+
+/* Standard Tablets (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .thecontainer {
+    flex-direction: column;
+    padding: 20px 40px;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .picDiv {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .profile-photo {
+    height: 60vh;
+    width: 60%;
+    max-width: 400px;
+    border-right: none;
+    border: 4px solid rgb(250, 187, 40);
+  }
+  
+  .sidecontent {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .tag {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  
+  .info-section {
+    padding: 30px 15px;
+  }
+  
+  .based-in {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .locations {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    gap: 8px;
+  }
+  
+  .info-box {
+    max-width: 85%;
+    padding: 20px 15px;
+    margin: 40px auto;
+    gap: 12px;
+  }
+  
+  .info-item {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .info-item strong {
+    font-size: 0.75rem;
+  }
+}
+
+/* Large Mobile Devices (415px - 480px) */
+@media screen and (max-width: 480px) {
+  .thecontainer {
+    padding: 15px 25px;
+  }
+  
+  .profile-photo {
+    height: 50vh;
+    width: 70%;
+    max-width: 300px;
+    border: 3px solid rgb(250, 187, 40);
+    border-radius: 30px;
+  }
+  
+  .profile-photo img {
+    border-radius: 25px;
+  }
+  
+  .sidecontent {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  
+  h2 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .tag {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  
+  p {
+    width: 95%;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  .info-section {
+    padding: 25px 12px;
+  }
+  
+  .based-in {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .locations {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    gap: 6px;
+  }
+  
+  .info-box {
+    max-width: 95%;
+    padding: 15px 10px;
+    margin: 30px auto;
+    gap: 10px;
+    border-radius: 12px;
+  }
+  
+  .info-item {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    width: 45%;
+  }
+  
+  .info-item strong {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  .info-item span {
+    text-align: center;
+  }
+}
+
+/* Small Mobile Devices (320px - 414px) */
+@media screen and (max-width: 414px) {
+  .thecontainer {
+    padding: 12px 20px;
+  }
+  
+  .profile-photo {
+    height: 45vh;
+    width: 75%;
+    max-width: 280px;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .tag {
+    padding: 3px 6px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .info-section {
+    padding: 20px 10px;
+  }
+  
+  .based-in {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .locations {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+  
+  .info-box {
+    padding: 12px 8px;
+    margin: 25px auto;
+    border-radius: 10px;
+  }
+  
+  .info-item {
+    font-size: 0.8rem;
+    width: 48%;
+    margin-bottom: 6px;
+  }
+  
+  .info-item strong {
+    font-size: 0.65rem;
+  }
+}
+
+/* Extra Small Mobile Devices (up to 320px) */
+@media screen and (max-width: 320px) {
+  .thecontainer {
+    padding: 10px 15px;
+  }
+  
+  .profile-photo {
+    height: 40vh;
+    width: 80%;
+    max-width: 250px;
+    border: 2px solid rgb(250, 187, 40);
+    border-radius: 25px;
+  }
+  
+  .profile-photo img {
+    border-radius: 20px;
+  }
+  
+  .sidecontent {
+    padding: 12px;
+  }
+  
+  h1 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+  
+  h2 {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+  
+  .tag {
+    padding: 2px 5px;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+  
+  .info-section {
+    padding: 15px 8px;
+  }
+  
+  .based-in {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .locations {
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+    gap: 4px;
+  }
+  
+  .info-box {
+    max-width: 98%;
+    padding: 10px 6px;
+    margin: 20px auto;
+    gap: 8px;
+    border-radius: 8px;
+  }
+  
+  .info-item {
+    font-size: 0.75rem;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .info-item strong {
+    font-size: 0.6rem;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .thecontainer {
+    flex-direction: row;
+    padding: 10px 20px;
+    min-height: 100vh;
+  }
+  
+  .picDiv {
+    width: 40%;
+    margin-bottom: 0;
+  }
+  
+  .profile-photo {
+    height: 90vh;
+    width: 80%;
+  }
+  
+  .sidecontent {
+    width: 60%;
+    padding: 15px;
+    justify-content: flex-start;
+  }
+  
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  
+  h2 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .tag {
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    width: 90%;
+  }
+  
+  .info-section {
+    padding: 10px 8px;
+  }
+  
+  .based-in {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .locations {
+    font-size: 0.65rem;
+    margin-bottom: 10px;
+  }
+  
+  .info-box {
+    padding: 8px 5px;
+    margin: 15px auto;
+    max-width: 90%;
+  }
+  
+  .info-item {
+    font-size: 0.65rem;
+    width: 30%;
+  }
+  
+  .info-item strong {
+    font-size: 0.55rem;
+  }
+}
+
+/* High DPI/Retina Display Adjustments */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+  .profile-photo {
+    border-width: 3px;
+  }
+  
+  .tag {
+    border-radius: 15px;
+  }
+  
+  .info-box {
+    border-radius: 12px;
+  }
+}
+
+/* Print Styles (Optional) */
+@media print {
+  .thecontainer {
+    background-image: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: none;
+  }
+  
+  .profile-photo {
+    border: 2px solid black;
+  }
+  
+  h1, h2, .based-in {
+    color: black;
+  }
+  
+  p, .locations, .info-item span {
+    color: #333;
+  }
+  
+  .info-section {
+    background-color: white;
+    color: black;
+  }
+  
+  .info-box {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 0 black;
+  }
+}

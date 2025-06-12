@@ -1,11 +1,11 @@
 import React from 'react';
-import deposit from "../assets/Group 35968.png"
-import cancellations from "../assets/_3133124283792.png"
-import styles from './Timetogether.module.css';
+import deposit from "../assets/Javiera mages/Javiera Prospect Profiles/Group 35968.png"
+import cancellations from "../assets/Javiera mages/Javiera Prospect Profiles/_3133124283792.png"
+import styles from '../assets/Styles/Timetogether.module.css';
 
 import image2 from "../assets/Javiera mages/Javiera Prospect Profiles/WhatsApp Image 2025-05-29 at 02.21.06.jpeg"
 import image7 from "../assets/Javiera mages/Javiera Prospect Profiles/image7.png"
-import displayImage from "../assets/Untitled design (37).png";
+import displayImage from "../assets/Javiera mages/Javiera Prospect Profiles/Untitled design (37).png";
 
 const Section = () => (
 <div className={styles.body}>
@@ -42,7 +42,7 @@ const PolicySection = () => (
         
         <div className={styles.info}>
         <p>After process</p>
-        <p>If you want FaceTime info add</p>
+        <p>If you want FaceTime no problem</p>
         </div>
 
       </div>
@@ -142,7 +142,7 @@ const Timetogether = () => {
           { label: 'Erotic massage (only massage)', price: 'US$500', note: "I don't take table mission or bs, but I'll do the best" },
           { label: 'Introduce myself VIP Service', price: 'US$700', note: 'Screening process is required' },
           { label: '90 min GFE', price: 'US$1,000', note: 'Screening process is required' },
-          { label: 'Dinner and guess who’s dessert', price: 'US$1,100', note: '@hrs, Make the reservation in advance' },
+          { label: 'Dinner and guess who’s dessert', price: 'US$1,100', note: '2hrs, Make the reservation in advance' },
         ]}
       />
 

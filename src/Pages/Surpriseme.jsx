@@ -1,5 +1,5 @@
 import React from "react";
-import "./SurpriseMe.css";
+import "../assets/Styles/SurpriseMe.css";
 import guccibra from "../assets/Javiera mages/Javiera Prospect Profiles/gucci bra white.webp";
 import gucciembroidered from "../assets/Javiera mages/Javiera Prospect Profiles/embroidered.avif";
 import guccilingerie from "../assets/Javiera mages/Javiera Prospect Profiles/gucci lingerie set.jpg";

@@ -2,18 +2,16 @@
   "name": "javiera",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://blaqboydee.github.io/jlopez/",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "bootstrap": "^5.3.6",
+    "emailjs-com": "^3.2.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",

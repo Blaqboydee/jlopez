@@ -1,9 +1,9 @@
 import React from 'react'
-import './Seeme.css';
-import GenFooter from './GenFooter'
+import '../assets/Styles/Seeme.css';
+import GenFooter from '../Components/GenFooter'
 
 import profileimage from "../assets/Javiera mages/Javiera Prospect Profiles/WhatsApp Image 2025-05-29 at 02.21.08.jpeg"
-import displayImage from "../assets/Untitled design (37).png";
+import displayImage from "../assets/Javiera mages/Javiera Prospect Profiles/Untitled design (37).png";
 import vector from "../assets/Javiera mages/Javiera Prospect Profiles/Vector 1.png"
 import longimage from "../assets/Javiera mages/Javiera Prospect Profiles/WhatsApp Image 2025-03-20 at 01.49.27.jpeg"
 import image2 from "../assets/Javiera mages/Javiera Prospect Profiles/WhatsApp Image 2025-05-29 at 02.21.06.jpeg"

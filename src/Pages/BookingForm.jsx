@@ -1,61 +1,20 @@
 import React, { useState } from 'react';
-import './BookingForm.css';
+import '../assets/Styles/BookingForm.css';
+import {useForm} from "../hooks/useForm"
 
 const BookingForm = () => {
-  const [currentStep, setCurrentStep] = useState(1);
-  const [formData, setFormData] = useState({
-    // Step 1 - Personal Info
-    firstName: '',
-    lastName: '',
-    phone: '',
-    email: '',
-    cityState: '',
-    ageBracket: '',
-    briefDescription: '',
-    howDidYouFind: '',
-    
-    // Step 2 - Experience Details
-    date: '',
-    time: '',
-    hour: '',
-    minutes: '',
-    ampm: 'AM',
-    duration: '',
-    meetingLocation: '',
-    experienceType: '',
-    addNuru: false,
-    
-    // Step 3 - References
-    affiliation: '',
-    referenceDetails: '',
-    provider1Website: '',
-    provider2Website: '',
-    provider3Website: ''
-  });
 
-  const handleInputChange = (field, value) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: value
-    }));
-  };
-
-  const handleNext = () => {
-    if (currentStep < 3) {
-      setCurrentStep(currentStep + 1);
-    }
-  };
-
-  const handlePrevious = () => {
-    if (currentStep > 1) {
-      setCurrentStep(currentStep - 1);
-    }
-  };
-
-  const handleSubmit = () => {
-    console.log('Form submitted:', formData);
-    alert('Reservation submitted successfully!');
-  };
+  const {
+     currentStep, 
+    setCurrentStep,
+    formData, 
+    setFormData,
+    handleInputChange,
+    handleNext,
+    handlePrevious,
+    handleSubmit
+  } = useForm()
+ 
 
   return (
     <div className="booking-container">
@@ -291,7 +250,7 @@ const BookingForm = () => {
         {currentStep === 3 && (
           <div className="step-content">
             <div className='topsec'>
-         <h3>SCREENING PROCESS</h3>
+            <h3>SCREENING PROCESS</h3>
             <p>If you're not a member of RS2K or P411, please submit 2-3 recent references from independent providers. Be sure to include each provider's name and website for verification.</p>
             
             <div className="important-section">
